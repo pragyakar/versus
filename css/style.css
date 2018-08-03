@@ -5,14 +5,35 @@ html, body {
 }
 .wrapper {
     height: 100vh;
-    padding: 20px;  
 }
 .container {
     height: 100px;
-    width: 250px;
+    line-height: 100px;
+    width: 300px;
     background: rgb(236, 251, 255);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px -6px rgba(0,0,0,0.5);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    transition: 0.4s ease;
+}
+.container > div {
+    text-align: center;
+}
+.container > div:hover {
+    cursor: pointer;
+}
+.left {
+background: rgb(255, 59, 59);
+}
+.right {
+    background: rgb(43, 135, 255);
+}
+.option-title {
+    color: rgba(255,255,255,1);
 }
