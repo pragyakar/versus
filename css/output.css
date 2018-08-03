@@ -7,12 +7,6 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-.form-wrapper {
-    height: 100vh;
-}
-
-/* ----------------------------------------------------------- */
-
 .survey-wrapper {
     height: 100vh;
 }
@@ -69,6 +63,14 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 13px;
+    user-select: none;
+}
+.host-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 13px;
     user-select: none;

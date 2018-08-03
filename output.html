@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Versus - Voting Made Easy</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+
+    <div class="survey-wrapper">
+        <div class="container" id="voting-box">
+            <div class="left" onclick="addleft()">
+                <div class="text">
+                    <span class="option-size" id="size-one"></span>
+                    <br>
+                    <span class="option-title" id="option-one"></span>                
+                </div>
+            </div>
+            <div class="right" onclick="addright()">
+                <div class="text">
+                    <span class="option-size" id="size-two"></span>
+                    <br>
+                    <span class="option-title" id="option-two"></span>
+                </div>
+            </div>
+        </div>
+        <div class="stats-container">
+            <span id="total-left"></span>
+            <br>
+            <span id="total-right"></span>
+            <br>
+            <span id="total-votes"></span>
+        </div>
+        <div class="host-container">
+            <span id="host-name"></span>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
