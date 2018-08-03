@@ -1,3 +1,2 @@
-# ig-voting
-
-<h1>Instagram Style Voting with pure CSS</h1> 
+<h2>Versus</h2>
+<h4>Voting Made Easy</h4>
