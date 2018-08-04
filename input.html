@@ -13,16 +13,28 @@
             <h1 class="logo"><span class="blu">Ver</span><span class="purp">sus</span></h1>
             <p class="subtitle">Voting Made Easy</p>
             <br>
-            <form action="/output.html" method="GET" id="form">
-                <input type="text" name="host" class="form-input" placeholder="host name" required>
+                <input type="text" name="host" id="host" class="form-input"  placeholder="host name" required>
                 <br> <br>  <hr style="border-top: black; width: 50%;"><br>
-                <input type="text" name="optionA" class="form-input" placeholder="Option A" maxlength="15" required>
+                <input type="text" name="survey-title" id="survey-title" class="form-input" placeholder="survey-title" required>
                 <br><br>
-                <input type="text" name="optionB" class="form-input" placeholder="Option B" maxlength="15" required>
+                <input type="text" name="optionA" id="optionA" class="form-input" placeholder="Option A" maxlength="15" required>
                 <br><br>
-                <button type="submit" class="btn-submit" form="form" value="submit">Start Survey</button>
-            </form>
+                <input type="text" name="optionB" id="optionB" class="form-input" placeholder="Option B" maxlength="15" required>
+                <br><br>        
+                <a href="output.html" onclick="saveData()" class="btn-submit">Start Survey</a>
         </div>
     </div>
+    <script>
+        function saveData(){
+            var host = document.getElementById("host").value;
+            var title = document.getElementById("survey-title").value;
+            var optA = document.getElementById("optionA").value;
+            var optB = document.getElementById("optionB").value;        
+            localStorage.setItem("host", host);
+            localStorage.setItem("title", title);
+            localStorage.setItem("optionA", optA);
+            localStorage.setItem("optionB", optB);
+        }
+    </script>
 </body>
 </html>

@@ -10,6 +10,8 @@
 <body>
 
     <div class="survey-wrapper">
+        <h1 class="survey-title" id="survey-title">Title of Survey</h1>
+        <p class="survey-info">(Click on desired side to vote)</p>
         <div class="container" id="voting-box">
             <div class="left" onclick="addleft()">
                 <div class="text">
@@ -27,8 +29,10 @@
             </div>
         </div>
         <div class="stats-container">
+            <span id="left-label"></span>:
             <span id="total-left"></span>
             <br>
+            <span id="right-label"></span>:
             <span id="total-right"></span>
             <br>
             <span id="total-votes"></span>
@@ -38,5 +42,16 @@
         </div>
     </div>
     <script src="js/app.js"></script>
+    <script>
+        window.onload = function() {
+            document.getElementById("survey-title").innerHTML = localStorage.getItem("title");
+            document.getElementById("option-one").innerHTML = localStorage.getItem("optionA");
+            document.getElementById("option-two").innerHTML = localStorage.getItem("optionB");
+            document.getElementById("left-label").innerHTML = localStorage.getItem("optionA");
+            document.getElementById("right-label").innerHTML = localStorage.getItem("optionB");
+            document.getElementById("host-name").innerHTML = "Hosted by: " + localStorage.getItem("host");
+        };
+
+    </script>
 </body>
 </html>

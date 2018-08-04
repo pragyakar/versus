@@ -6,7 +6,22 @@ body {
     width: 100%;
     font-family: 'Roboto Slab', serif;
 }
-
+.survey-title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.survey-info {
+    color: rgba(0,0,0,0.7);
+    font-size: 15px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
 .survey-wrapper {
     height: 100vh;
 }

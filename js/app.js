@@ -27,9 +27,8 @@ function updatePoints(){
     document.getElementById("voting-box").style.gridTemplateColumns=  percentA + "% " + percentB + "%";
 
     document.getElementById("total-votes").innerHTML = "Total Votes Casted: " + totalVotes;
-    document.getElementById("total-left").innerHTML = "Option A: " + pointA;
-    document.getElementById("total-right").innerHTML = "Option B: " + pointB;
-    document.getElementById("host-name").innerHTML = "Hosted by: pragyakar";
+    document.getElementById("total-left").innerHTML =  pointA;
+    document.getElementById("total-right").innerHTML = pointB;
 }
 
 function setup() {
