@@ -13,6 +13,7 @@
             <h1 class="logo"><span class="blu">Ver</span><span class="purp">sus</span></h1>
             <p class="subtitle">Voting Made Easy</p>
             <br>
+            <form action="/output.html">
                 <input type="text" name="host" id="host" class="form-input"  placeholder="host name" required>
                 <br> <br>  <hr style="border-top: black; width: 50%;"><br>
                 <input type="text" name="survey-title" id="survey-title" class="form-input" placeholder="survey-title" required>
@@ -21,7 +22,8 @@
                 <br><br>
                 <input type="text" name="optionB" id="optionB" class="form-input" placeholder="Option B" maxlength="15" required>
                 <br><br>        
-                <a href="output.html" onclick="saveData()" class="btn-submit">Start Survey</a>
+                <button type="submit" href="output.html" onclick="saveData()" class="btn-submit">Start Survey</submit>
+            </form>
         </div>
     </div>
     <script>
