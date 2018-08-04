@@ -1,23 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'Roboto Slab', serif;
-}
+@import url('main.css');
+
 .survey-title {
     position: absolute;
-    top: 25%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    font-size: 2.5em;
 }
 .survey-info {
     color: rgba(0,0,0,0.7);
     font-size: 15px;
     position: absolute;
-    top: 32%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -27,11 +21,11 @@ body {
 }
 
 .container {
-    height: 100px;
+    height: 90px;
     width: 300px;
     background: rgb(236, 251, 255);
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -50,11 +44,11 @@ body {
 }
 
 .left {
-    background: rgb(192, 102, 177);
+    background: var(--brand-purple);
 }
 
 .right {
-    background: rgb(97, 165, 255);
+    background: var(--brand-blue);
 }
 
 .text {
@@ -62,11 +56,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    user-select: none;
 }
 
 .option-title {
     color: rgba(255, 255, 255, 1);
+    font-size: 22px;
 }
 
 .option-size {
@@ -80,7 +74,6 @@ body {
     left: 20px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 13px;
-    user-select: none;
 }
 .host-container {
     position: absolute;
@@ -88,5 +81,4 @@ body {
     right: 20px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 13px;
-    user-select: none;
 }

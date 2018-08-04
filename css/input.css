@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'Roboto Slab', serif;
-}
-form > input, button {
-    font-family: 'Roboto Slab', serif;
-}
+@import url('main.css');
+
 .form-wrapper {
     height: 100vh;
     display: flex;
@@ -39,10 +30,10 @@ form > input, button {
 }
 
 .blu {
-    color: rgb(97, 165, 255);
+    color: var(--brand-blue);
 }
 .purp {
-    color: rgb(192, 102, 177);
+    color: var(--brand-purple);
 }
 .form-input {
     padding: 10px;
@@ -63,13 +54,13 @@ form > input, button {
     font-size: 15px;
     color: rgb(255,255,255);
     background-color:rgba(192, 102, 177,0.8);
-    border: 1px solid rgb(192, 102, 177);
+    border: 1px solid var(--brand-purple);
     transition: 0.2s ease;
     letter-spacing: 0.5px;
     margin-top: 10px;
 }
 .btn-submit:hover {
     cursor: pointer;
-    background-color:rgba(192, 102, 177,1);
+    background-color:var(--brand-purple);
     transition: 0.3s ease;
 }
