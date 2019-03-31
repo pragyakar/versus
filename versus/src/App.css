@@ -1,3 +1,75 @@
 .App {
-  
+  background-image: url('./bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.main-container {
+  width: 320px;
+  background-color: var(--white);
+  min-height: 150px;
+  padding: 20px 30px 30px 30px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,0.2);
+  transition: 0.4s ease;
+}
+
+.main-container-lg {
+  width: 1000px;
+  background-color: var(--white);
+  min-height: 550px;
+  padding: 20px 30px 30px 30px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,0.2);
+  transition: 0.4s ease;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.blu {
+  color: var(--blue);
+}
+.purp {
+  color: var(--purple);
+}
+.subtitle {
+  margin:0;
+  color: var(--light-grey);
+}
+
+.btn-ask {
+  padding: 9px 35px;
+  background-color:rgba(192, 102, 177,0.8);
+  width: 100%;
+  border-radius: 3px;
+  font-size: 15px;
+  color: rgb(255,255,255);
+  border: 1px solid var(--purple);
+  transition: 0.2s ease;
+  letter-spacing: 0.5px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+.btn-ask:hover {
+  cursor: pointer;
+  background-color:var(--purple);
+  transition: 0.3s ease;
+}
+.landing-container {
+  padding: 30px;
 }

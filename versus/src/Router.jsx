@@ -1,15 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, } from 'react-router-dom';
+import { BrowserRouter, Route, } from 'react-router-dom';
 import Landing from './components/Landing';
-import Polls from './components/Polls';
+import PollForm from './components/PollForm';
 
 const Router = () => (
   <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Landing} />
-      <Route path="/ask" component={Polls} />
-      {/* <Route path="/poll" component={} />  */}
-    </Switch>
+    <Route exact path="/" component={Landing} />
+    <Route path="/ask" component={PollForm} />
+    {/* <Route path="/poll" component={} />  */}
   </BrowserRouter>
 )
 
