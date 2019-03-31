@@ -1,5 +1,16 @@
+:root {
+  --purple: rgb(192, 102, 177);
+  --blue: rgb(97, 165, 255);
+  --dark-grey:rgb(77, 77, 77);
+  --light-grey: rgb(105, 105, 105);
+  --white: rgb(255,255,255);
+}
+
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  user-select: none;
+  color: var(--dark-grey);
 }
-
