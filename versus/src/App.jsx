@@ -1,10 +1,10 @@
 import React from 'react';
-import Landing from './components/Landing';
+import Router from './Router';
 import './App.css';
 
 const App = () => (    
   <div className="App">
-    <Landing/>
+    <Router />
   </div>
 );
 
