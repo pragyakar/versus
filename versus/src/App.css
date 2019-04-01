@@ -54,12 +54,12 @@
 
 .btn-ask {
   padding: 9px 50px;
-  background-color:rgba(192, 102, 177,0.8);
+  background-color:rgba(97, 165, 255, 0.8);
   width: 100%;
   border-radius: 3px;
   font-size: 15px;
   color: rgb(255,255,255);
-  border: 1px solid var(--purple);
+  border: 1px solid var(--blue);
   transition: 0.2s ease;
   letter-spacing: 0.5px;
   margin-top: 50px;
@@ -67,7 +67,7 @@
 }
 .btn-ask:hover {
   cursor: pointer;
-  background-color:var(--purple);
+  background-color:var(--blue);
   transition: 0.3s ease;
 }
 .landing-container {
@@ -76,11 +76,11 @@
 .btn-start {
   display: block;
   padding: 9px 35px;
-  background-color: rgba(97, 165, 255, 0.8);
+  background-color: rgba(192, 102, 177,0.8);
   border-radius: 3px;
   font-size: 15px;
   color: rgb(255,255,255);
-  border: 1px solid var(--blue);
+  border: 1px solid var(--purple);
   transition: 0.2s ease;
   letter-spacing: 0.5px;
   margin-top: 25px;
@@ -89,7 +89,7 @@
 }
 .btn-start:hover {
   cursor: pointer;
-  background-color:var(--blue);
+  background-color:var(--purple);
   transition: 0.3s ease;
 }
 
