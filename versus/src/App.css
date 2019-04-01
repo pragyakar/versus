@@ -185,3 +185,25 @@ hr {
   font-size: 13px;
   text-align: left;
 }
+
+.btn-end {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 9px 35px;
+  background-color: rgba(179, 179, 179, 0.8);
+  border-radius: 3px;
+  font-size: 15px;
+  color: rgb(255,255,255);
+  border: 0;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.btn-end:hover {
+  background-color: rgb(167, 167, 167);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+

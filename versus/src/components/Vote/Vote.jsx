@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter} from 'react-router-dom';
 import NotFound from "../commons/NotFound/NotFound";
 import Stats from "../Stats/Stats";
 
@@ -60,6 +61,11 @@ class Vote extends React.Component {
     localStorage.setItem("optionBcount", this.state.optionBcount);
     console.log(this.state.optionApercent, this.state.optionBpercent);
   };
+  
+  endPoll = () => {
+    localStorage.clear();
+    this.props.history.push('/ask');
+  }
 
   render() {
     var gridSizes = {
@@ -96,6 +102,7 @@ class Vote extends React.Component {
               <span className="host-name">Hosted by: {host}</span>
             </div>
             <Stats data={this.state}/>
+            <button className="btn-end" onClick={this.endPoll}>End Poll</button>
           </React.Fragment>
         ) : (
           <NotFound />
@@ -105,4 +112,4 @@ class Vote extends React.Component {
   }
 }
 
-export default Vote;
+export default withRouter(Vote);
