@@ -22,7 +22,7 @@ class Vote extends React.Component {
       optionB: localStorage.getItem("optionB"),
       optionAcount: parseInt(localStorage.getItem("optionAcount")) + 1,
       optionBcount: parseInt(localStorage.getItem("optionBcount")) + 1
-    });
+    }, () => this.updateVotes());
   }
 
   activePollExists = () => {
@@ -56,6 +56,8 @@ class Vote extends React.Component {
       optionApercent: Math.round(percentA),
       optionBpercent: Math.round(percentB)
     });
+    localStorage.setItem("optionAcount", this.state.optionAcount);
+    localStorage.setItem("optionBcount", this.state.optionBcount);
     console.log(this.state.optionApercent, this.state.optionBpercent);
   };
 
@@ -77,7 +79,7 @@ class Vote extends React.Component {
     return (
       <div className="main-container-lg">
         {activePoll ? (
-          <>
+          <React.Fragment>
             <div className="vote-container">
               <h1 className="poll-title">{title}</h1>
               <p className="poll-info">(Click on desired side to vote)</p>
@@ -94,7 +96,7 @@ class Vote extends React.Component {
               <span className="host-name">Hosted by: {host}</span>
             </div>
             <Stats data={this.state}/>
-          </>
+          </React.Fragment>
         ) : (
           <NotFound />
         )}
