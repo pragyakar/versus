@@ -30,6 +30,7 @@
   border-radius: 7px;
   box-shadow: 0px 0px 25px -6px rgba(0,0,0,0.2);
   transition: 0.4s ease;
+  position: relative;
 }
 
 .header {
@@ -115,4 +116,50 @@ hr {
   margin-top: 20px;
   display:block;
   color: rgba(255, 0, 0, 0.8);
+}
+
+.poll-info{
+  color: var(--light-grey);
+  font-size: 15px;
+  white-space: nowrap;
+}
+.host-name {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+}
+
+.voting-box {
+  height: 90px;
+  width: 300px;
+  color: var(--white);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+.voting-box:hover {
+  cursor: pointer;
+}
+.optionA {
+  background: rgba(192, 102, 177,0.8);;
+}
+
+.optionB {
+  background: rgba(97, 165, 255, 0.8);;
+}
+
+.option-size {
+  font-size: 30px;
+}
+.option-title {
+  font-size: 15px;
 }
