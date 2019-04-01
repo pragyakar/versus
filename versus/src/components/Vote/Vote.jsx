@@ -1,5 +1,6 @@
 import React from "react";
 import NotFound from "../commons/NotFound/NotFound";
+import Stats from "../Stats/Stats";
 
 class Vote extends React.Component {
   state = {
@@ -76,33 +77,24 @@ class Vote extends React.Component {
     return (
       <div className="main-container-lg">
         {activePoll ? (
-          <div className="vote-container">
-            <h1 className="poll-title">{title}</h1>
-            <p className="poll-info">(Click on desired side to vote)</p>
-            <div className="voting-box" style={gridSizes}>
-              <div
-                className="optionA"
-                name="optionA"
-                onClick={this.addVoteLeft}
-              >
-                <span className="option-size">{optionApercent}%</span>
-                <br />
-                <span className="option-title">{optionA}</span>
+          <>
+            <div className="vote-container">
+              <h1 className="poll-title">{title}</h1>
+              <p className="poll-info">(Click on desired side to vote)</p>
+              <div className="voting-box" style={gridSizes}>
+                <div className="optionA" onClick={this.addVoteLeft}>
+                  <span className="option-size">{optionApercent}%</span>
+                  <span className="option-title">{optionA}</span>
+                </div>
+                <div className="optionB" onClick={this.addVoteRight}>
+                  <span className="option-size">{optionBpercent}%</span>
+                  <span className="option-title">{optionB}</span>
+                </div>
               </div>
-              <div
-                className="optionB"
-                name="optionB"
-                onClick={this.addVoteRight}
-              >
-                <span className="option-size" id="size-two">
-                  {optionBpercent}%
-                </span>
-                <br />
-                <span className="option-title">{optionB}</span>
-              </div>
+              <span className="host-name">Hosted by: {host}</span>
             </div>
-            <span className="host-name">Hosted by: {host}</span>
-          </div>
+            <Stats data={this.state}/>
+          </>
         ) : (
           <NotFound />
         )}
