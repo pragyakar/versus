@@ -1,14 +1,14 @@
 {
-  "main.css": "/versus/static/css/main.c1123e28.chunk.css",
-  "main.js": "/versus/static/js/main.372feff6.chunk.js",
-  "main.js.map": "/versus/static/js/main.372feff6.chunk.js.map",
-  "runtime~main.js": "/versus/static/js/runtime~main.d14c347d.js",
-  "runtime~main.js.map": "/versus/static/js/runtime~main.d14c347d.js.map",
-  "static/js/2.5bb7d9f6.chunk.js": "/versus/static/js/2.5bb7d9f6.chunk.js",
-  "static/js/2.5bb7d9f6.chunk.js.map": "/versus/static/js/2.5bb7d9f6.chunk.js.map",
-  "index.html": "/versus/index.html",
-  "precache-manifest.23113f6af6fa88fc07e08ad59603b346.js": "/versus/precache-manifest.23113f6af6fa88fc07e08ad59603b346.js",
-  "service-worker.js": "/versus/service-worker.js",
-  "static/css/main.c1123e28.chunk.css.map": "/versus/static/css/main.c1123e28.chunk.css.map",
-  "static/media/App.css": "/versus/static/media/bg.022465be.jpg"
+  "main.css": "/Versus/static/css/main.68d31f97.chunk.css",
+  "main.js": "/Versus/static/js/main.1a4bb68f.chunk.js",
+  "main.js.map": "/Versus/static/js/main.1a4bb68f.chunk.js.map",
+  "runtime~main.js": "/Versus/static/js/runtime~main.5185ba83.js",
+  "runtime~main.js.map": "/Versus/static/js/runtime~main.5185ba83.js.map",
+  "static/js/2.5bb7d9f6.chunk.js": "/Versus/static/js/2.5bb7d9f6.chunk.js",
+  "static/js/2.5bb7d9f6.chunk.js.map": "/Versus/static/js/2.5bb7d9f6.chunk.js.map",
+  "index.html": "/Versus/index.html",
+  "precache-manifest.146b0ade45a8a45a116297809c733c39.js": "/Versus/precache-manifest.146b0ade45a8a45a116297809c733c39.js",
+  "service-worker.js": "/Versus/service-worker.js",
+  "static/css/main.68d31f97.chunk.css.map": "/Versus/static/css/main.68d31f97.chunk.css.map",
+  "static/media/App.css": "/Versus/static/media/bg.022465be.jpg"
 }
