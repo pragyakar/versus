@@ -6,9 +6,9 @@ import Vote from './components/Vote';
 
 const Router = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Route exact path={process.env.PUBLIC_URL + '/'} component={Landing} />
-    <Route path={process.env.PUBLIC_URL + '/ask'} component={PollForm} />
-    <Route path={process.env.PUBLIC_URL + '/vote'} component={Vote} /> 
+    <Route exact path="/" component={Landing} />
+    <Route path="/ask" component={PollForm} />
+    <Route path="/vote" component={Vote} /> 
   </BrowserRouter>
 )
 
