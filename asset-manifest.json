@@ -1,5 +1,5 @@
 {
-  "main.css": "/versus/static/css/main.c1123e28.chunk.css",
+  "main.css": "/versus/static/css/main.36f1fcf2.chunk.css",
   "main.js": "/versus/static/js/main.fee6d704.chunk.js",
   "main.js.map": "/versus/static/js/main.fee6d704.chunk.js.map",
   "runtime~main.js": "/versus/static/js/runtime~main.d14c347d.js",
@@ -7,8 +7,8 @@
   "static/js/2.5bb7d9f6.chunk.js": "/versus/static/js/2.5bb7d9f6.chunk.js",
   "static/js/2.5bb7d9f6.chunk.js.map": "/versus/static/js/2.5bb7d9f6.chunk.js.map",
   "index.html": "/versus/index.html",
-  "precache-manifest.b643c99a7e86cc54e61512f13b68ac68.js": "/versus/precache-manifest.b643c99a7e86cc54e61512f13b68ac68.js",
+  "precache-manifest.f49446c5741c5ea58043bb8f550235b8.js": "/versus/precache-manifest.f49446c5741c5ea58043bb8f550235b8.js",
   "service-worker.js": "/versus/service-worker.js",
-  "static/css/main.c1123e28.chunk.css.map": "/versus/static/css/main.c1123e28.chunk.css.map",
-  "static/media/App.css": "/versus/static/media/bg.022465be.jpg"
+  "static/css/main.36f1fcf2.chunk.css.map": "/versus/static/css/main.36f1fcf2.chunk.css.map",
+  "static/media/App.css": "/versus/static/media/bg.ece3d9bb.jpg"
 }
