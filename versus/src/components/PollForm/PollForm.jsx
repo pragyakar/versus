@@ -22,7 +22,9 @@ class PollForm extends React.Component {
       localStorage.setItem("host", host);
       localStorage.setItem("title", title);
       localStorage.setItem("optionA", optionA);
+      localStorage.setItem("optionAcount", 0);
       localStorage.setItem("optionB", optionB);
+      localStorage.setItem("optionBcount", 0);
       this.props.history.push('/vote');
     }
   }
