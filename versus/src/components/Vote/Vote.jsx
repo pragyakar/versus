@@ -24,11 +24,12 @@ class Vote extends React.Component {
       optionAcount: parseInt(localStorage.getItem("optionAcount")) + 1,
       optionBcount: parseInt(localStorage.getItem("optionBcount")) + 1
     }, () => this.updateVotes());
+    console.log(this.state);
   }
 
   activePollExists = () => {
     const { host, title, optionA, optionB } = this.state;
-    if (host === "" || title === "" || optionA === "" || optionB === "") {
+    if (host === "" || host === null || title === "" || title === null || optionA === "" || optionA === null || optionB === "" || optionB === null) {
       return false;
     } else {
       return true;
@@ -82,6 +83,8 @@ class Vote extends React.Component {
       optionBpercent
     } = this.state;
     const activePoll = this.activePollExists();
+    console.log(activePoll);
+    console.log(this.state);
     return (
       <div className="main-container-lg">
         {activePoll ? (
