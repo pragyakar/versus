@@ -207,3 +207,59 @@ hr {
   cursor: pointer;
 }
 
+.graph-container {
+  min-height: 200px;
+  margin-bottom: 50px;
+}
+.piechart {
+  margin: 50px;
+  height: 200px;
+}
+.grid {
+  padding: 20px;  
+}
+
+.grid-bar {
+  border-radius: 5px;
+  /* min-height: 200px; */
+  color: var(--white);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.grid-bar-left {
+  background-color: var(--purple); 
+}
+
+.grid-bar-right {
+  background-color: var(--blue); 
+}
+
+.grid-count {
+  font-size: 30px;
+}
+
+.legend-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  text-align: left;
+}
+
+.inner-legend {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.color-box {
+  height: 100%;
+  width: 100%;
+  margin-right: 20px; 
+  display: block;
+  border-radius: 20px;
+}
+
+.text-box{
+  margin-left: 10px;
+}

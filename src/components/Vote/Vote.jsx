@@ -63,9 +63,8 @@ class Vote extends React.Component {
     console.log(this.state.optionApercent, this.state.optionBpercent);
   };
   
-  endPoll = () => {
-    localStorage.clear();
-    this.props.history.push('/ask');
+  viewReport = () => {
+    this.props.history.push('/report');
   }
 
   render() {
@@ -105,7 +104,7 @@ class Vote extends React.Component {
               <span className="host-name">Hosted by: {host}</span>
             </div>
             <Stats data={this.state}/>
-            <button className="btn-end" onClick={this.endPoll}>End Poll</button>
+            <button className="btn-end" onClick={this.viewReport}>End Poll</button>
           </React.Fragment>
         ) : (
           <NotFound />

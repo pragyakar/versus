@@ -11,6 +11,10 @@ class PollForm extends React.Component {
     error: ''
   }
 
+  componentDidMount() {
+    localStorage.clear();
+  }
+
   startPoll = () => {
     const { host, title, optionA, optionB} = this.state;
     if ( host === '' || title === '' || optionA === '' || optionB === '') {
