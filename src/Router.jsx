@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, } from 'react-router-dom';
 import Landing from './components/Landing';
-import PollForm from './components/PollForm';
 import Vote from './components/Vote';
+import NewPoll from './components/NewPoll/NewPoll';
 
 const Router = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Route exact path="/" component={Landing} />
-    <Route path="/ask" component={PollForm} />
+    <Route path="/ask" component={NewPoll} />
     <Route path="/vote" component={Vote} /> 
   </BrowserRouter>
 )
